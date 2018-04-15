@@ -1,6 +1,6 @@
 {
     "name": "icuenca/ringoo-mvc",
-    "type": "microframework",
+    "type": "project",
     "description": "A Simple PHP Micro MVC Framework",
     "keywords": ["Framework","PHP", "Simple PHP"],
     "homepage": "https://github.com/icuenca/ringooMVC-1.0",
