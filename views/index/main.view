@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<center>
+	<h1>RingooMVC 2.0</h1>
+	<h2>Welcome</h2>
+	<h3>This is my first App</h3>
+	<h4>{{ hello }}</h4>
+</center>
+</body>
+</html>

@@ -1,4 +1,6 @@
 <?php
+require './vendor/autoload.php';
+
 class Common 
 {
 
@@ -29,5 +31,12 @@ class Common
 		}		
 	}
 
+	//Funcion que crea las vistas renderizadas con Twig
+	function view($url, $vars)
+	{
+		$loader = new Twig_Loader_Filesystem('./views');
+		$twig = new Twig_Environment($loader, []);
+		echo $twig->render($url . '.view', $vars);
+	}
+
 }
-?>
