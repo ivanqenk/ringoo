@@ -10,6 +10,7 @@
 	<h2>Welcome</h2>
 	<h3>This is my first App</h3>
 	<h4>{{ hello }}</h4>
+	<h5>{{ fecha }}</h5>
 </center>
 </body>
 </html>

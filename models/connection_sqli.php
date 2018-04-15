@@ -9,7 +9,7 @@
 		public function connect()
 		{
 			//Cuidado con estas líneas de terror			
-			if(!$this->connection = mysqli_connect('localhost','root','1234567','amazon2'))
+			if(!$this->connection = mysqli_connect(SERVIDOR,USUARIO_BD,CONTRASENIA_BD,BD))
 			{
 				echo "<br><b style='color:red;'>Error al tratar de conectar</b><br>";	
 			}
