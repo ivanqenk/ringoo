@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Acontia 2.1</title>
+<title>RingooMVC</title>
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="../../netwarelog/design/default/netwarlog.css" />
 <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-<title>Título</title>
 <div ID="waitDiv" style="position:absolute;margin-left:350px;visibility:hidden">
 <img src="images/loading2.gif" width='70'>
 </div>

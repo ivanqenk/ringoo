@@ -1,6 +1,6 @@
 <br/>
 <footer>
-	<div style='text-align:center; width:100%; clear:both;'>Acontia 2.1</div>
+	<div style='text-align:center; width:100%; clear:both;'>RingooMVC</div>
 </footer>
 
 </body>
