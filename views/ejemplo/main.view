@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<center>
+	<h1>RingooMVC 2.0</h1>
+	<h2>Pagina de Ejemplo</h2>
+	
+	
+	<h5>{{ concepto }}</h5>
+</center>
+</body>
+</html>

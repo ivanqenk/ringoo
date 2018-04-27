@@ -11,7 +11,10 @@ $method = $_GET['f'];
 if (isset($_GET['c']) && file_exists( 'controllers/'.$controller_file.'.php')) 
 {
 	require 'controllers/'.$controller_file.'.php';
-	$controller = new $_GET['c']();
+	require 'models/'.$controller_file.'.php';
+	$model = $controller_file.'Model';
+
+	$controller = new $_GET['c'](new $model);
 }
 elseif(isset($_GET['f']))//Si no existe el controlador pero hay una funcion
 {
@@ -20,7 +23,8 @@ elseif(isset($_GET['f']))//Si no existe el controlador pero hay una funcion
 else//Si no existe ni controlador ni funcion manda al index
 {
 	require 'controllers/index.php';
-	$controller = new Index();
+	require 'models/index.php';
+	$controller = new Index(new IndexModel);
 	$method = METODO_INICIAL;
 }
 

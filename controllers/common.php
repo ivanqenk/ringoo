@@ -1,8 +1,21 @@
 <?php
 require './vendor/autoload.php';
-
 class Common 
 {
+	protected $Model;
+
+	//Hacer la inyeccion del modelo que vamos a utilizar
+	function __construct(Connection $Model)
+	{
+		$this->Model = $Model;
+		$this->Model->connect();
+	}
+
+	function __destruct()
+	{
+		//Se destruye el objeto que instancia al modelo que se va a utilizar
+		$this->Model->close();
+	}
 
 	function top()
 	{

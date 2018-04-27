@@ -1,9 +1,9 @@
 <?php
 
 	//Esta es la clase de coneccion Padre que hereda los atributos a los modelos
-	class Connection
+	abstract class Connection
 	{
-		public $connection;
+		protected $connection;
 
 		//Conecta a la base de datos
 		public function connect()
