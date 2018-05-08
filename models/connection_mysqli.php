@@ -5,8 +5,8 @@
 	{
 		protected $connection;
 
-		//Conecta a la base de datos
-		public function connect()
+		//Abre conexion a base de datos al momento de instanciarse la clase
+		public function __construct()
 		{
 			//Cuidado con estas líneas de terror			
 			if(!$this->connection = mysqli_connect(SERVIDOR,USUARIO_BD,CONTRASENIA_BD,BD))
@@ -14,12 +14,14 @@
 				echo "<br><b style='color:red;'>Error al tratar de conectar</b><br>";	
 			}
 			$this->connection->set_charset('utf8');// Previniendo errores con SetCharset
+			//echo 'Conectado';
 		}
 
-		//funcion que cierra la coneccion
-		public function close()
+		//Cierra la conexion al momento de dejar de usar la clase de conexion
+		public function __destruct()
 		{
 			$this->connection->close();
+			//echo 'Desconectado';
 		}
 
 		//Funcion que genera las consultas genericas a la base de datos

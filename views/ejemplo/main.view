@@ -11,6 +11,8 @@
 	
 	
 	<h5>{{ concepto }}</h5>
+	<h5>{{ concepto2 }}</h5>
+	<h5>{{ concepto3 }}</h5>
 </center>
 </body>
 </html>

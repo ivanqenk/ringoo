@@ -1,29 +1,24 @@
 <?php
 require './vendor/autoload.php';
-class Common 
+require 'controllers.php';
+
+abstract class Common implements IControllers
 {
 	protected $Model;
 
 	//Hacer la inyeccion del modelo que vamos a utilizar
-	function __construct(Connection $Model)
+	public function __construct(Connection $Model)
 	{
 		$this->Model = $Model;
-		$this->Model->connect();
 	}
 
-	function __destruct()
-	{
-		//Se destruye el objeto que instancia al modelo que se va a utilizar
-		$this->Model->close();
-	}
-
-	function top()
+	public function top()
 	{
 		//carga la vista que contiene el top
 		require('views/partial/top.php');
 	}
 
-	function footer()
+	public function footer()
 	{
 		//carga la vista que contiene el footer
 		require('views/partial/footer.php');
@@ -32,7 +27,7 @@ class Common
 	//Genera el contenido cambiante, donde $f es la variable que contiene el nombre del controlador que va a cargar
 	//si el controlador existe lo carga caso contrario lo que cargara sera un controlador por default que contiene
 	//la pagina default principal
-	function content($f)
+	public function content($f)
 	{	
 		if(isset($f))
 		{

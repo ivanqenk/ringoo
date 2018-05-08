@@ -1,6 +1,6 @@
 <?php
 //require("models/connection.php"); // funciones mySQL 
-require("models/connection_sqli.php"); // funciones mySQLi
+require("models/connection_mysqli.php"); // funciones mySQLi
 
 class EjemploModel extends Connection
 {

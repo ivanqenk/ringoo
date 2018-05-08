@@ -9,11 +9,13 @@ class Ejemplo extends Common
 	{
 		//Accedemos al metodo del controlador que nos trae la consulta
 		$concepto = $this->Model->metodo(1);
+		$concepto2 = $this->Model->metodo(2);
+		$concepto3 = $this->Model->metodo(3);
 
 		$hello 	= "Hello World!";
 
 		//Metodo que renderiza la vista
-		$this->view('ejemplo/main', compact('concepto'));
+		$this->view('ejemplo/main', compact('concepto','concepto2','concepto3'));
 	}
 
 }
